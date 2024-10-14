@@ -7,6 +7,9 @@ class Payroll{
         Double grossPay;
         Scanner keyboard = new Scanner(System.in);
         //get the user name
+        System.out.print("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+         System.out.print("                         GROSSPAYCALCULATOR IN DIFF CURRENCIES    ");
+         System.out.print("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
         System.out.print("Enter your name");
         name = keyboard.nextLine();
         //get hours
@@ -18,6 +21,10 @@ class Payroll{
         // gross pay
         grossPay = hour * payRate;
         System.out.println("Hello " +name);
-        System.out.println("your grosspay is $"+ grossPay);
+        euro = grosspay/141.16;
+        dollar = grosspay/129.17
+        System.out.println("your grosspay is ksh"+ grossPay);
+        System.out.println("your grosspay in dollars $"+ dollar);
+        System.out.println("your grosspay i euros  €"+ euro);
     }
 }
